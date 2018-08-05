@@ -1,5 +1,7 @@
 {
   "name": "geoloc",
   "private": true,
-  "dependencies": {}
+  "dependencies": {
+   
+  }
 }
