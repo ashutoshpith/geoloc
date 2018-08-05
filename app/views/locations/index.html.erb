@@ -29,3 +29,12 @@
 <br>
 
 <%= link_to 'New Location', new_location_path %>
+
+
+<% title "Locations" %>
+
+<%= form_tag locations_path, :method => :get do %>
+  <p>
+    <%= text_field_tag :search, params[:search] %>
+    <%= submit_tag "Search Near", :name => nil %>
+<% end %>
