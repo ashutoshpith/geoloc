@@ -1,11 +1,4 @@
 
-
-<ul>
-<% for location in @location.nearbys(10) %>
-  <li><%= link_to location.address, location %> (<%= location.distance.round(2) %> miles)</li>
-<% end %>
-</ul<% title "Location" %>
-
 <p>
   <strong>Address:</strong>
   <%= @location.address %>
@@ -21,7 +14,7 @@
 
 <h3>Nearby Locations</h3>
 <ul>
-<% for location in @location.nearbys(10) %>
+<% for location in @location.nearbys(30) %>
   <li><%= link_to location.address, location %> (<%= location.distance.round(2) %> miles)</li>
 <% end %>
 </ul>
