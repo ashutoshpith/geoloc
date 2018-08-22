@@ -1,0 +1,40 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Street:</strong>
+  <%= @ping.street %>
+</p>
+
+<p>
+  <strong>City:</strong>
+  <%= @ping.city %>
+</p>
+
+<p>
+  <strong>Zip:</strong>
+  <%= @ping.zip %>
+</p>
+
+<p>
+  <strong>State:</strong>
+  <%= @ping.state %>
+</p>
+
+<p>
+  <strong>Longitude:</strong>
+  <%= @ping.longitude %>
+</p>
+
+<p>
+  <strong>Latitude:</strong>
+  <%= @ping.latitude %>
+</p>
+
+
+
+<%= image_tag "http://maps.google.com/maps/api/staticmap?size=450x300&sensor=false&zoom=16&markers=#{@ping.latitude}%2C#{@ping.longitude}" %>
+
+<br>
+<hr>
+<%= link_to 'Edit', edit_ping_path(@ping) %> |
+<%= link_to 'Back', pings_path %>
